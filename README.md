@@ -49,8 +49,8 @@ In OpenCV:
 ```
 Cv2.threshold(image, thresh_val, max_val, method)
 ```
-![]("Figs/thresh.gif" width="450")
-![]("Figs/dilate.gif" width="450")
+![](Figs/thresh.gif width="450")
+![](Figs/dilate.gif width="450")
 
 Step 05:
 
