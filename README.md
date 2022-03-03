@@ -15,10 +15,19 @@ Background image is a baseline image. This image is used as a reference for dete
 ### Step 2:
 
 The next step is conversion to grayscale and gaussian smoothing. It removes the noise from the image since noise can affect the edge detection results. The gaussian kernel is calculated using the formula: 
-<img src="Figs/gauss.jpg" width="100" title="hover text">
+
+<p align="center">
+<img src="Figs/gauss.jpg" width="150" title="hover text">
+</p>
+
 
 Gaussian filter is convolved with the image to remove the noise and smoothened the image.
-<img src="Figs/conv.jpg" width="200" title="hover text">
+
+<p align="center">
+<img src="Figs/conv.jpg" width="400" title="hover text">
+</p>
+
+![](Figs/blur.gif)
 
 ### Step 3:
 
@@ -27,10 +36,10 @@ Pixel Wise intensity difference.
 In OpenCV:
 
 ``` #2x
-
 Cv2.absdiff(reference, original)
-
 ```
+
+![](Figs/diff.gif)
 
 ### Step 04:
 
@@ -39,14 +48,18 @@ In OpenCV:
 
 ```
 Cv2.threshold(image, thresh_val, max_val, method)
-
 ```
+![](Figs/thresh.gif)
 
+
+![](Figs/dilate.gif)
 
 Step 05:
 
 Next step is finding Contours and Contours area. Contours can be explained simply as a curve joining all the continuous points (along the boundary), having same color or intensity. Contours are an outline representing or bounding the shape or form of something.
 Contour Area -> Area Enclosed inside a closed contour in pixels
 
+![](Figs/mot_det.gif)
 
+![](Figs/output.gif)
 
