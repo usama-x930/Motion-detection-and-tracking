@@ -49,13 +49,17 @@ In OpenCV:
 ```
 Cv2.threshold(image, thresh_val, max_val, method)
 ```
-![](Figs/thresh.gif width="450")
-![](Figs/dilate.gif width="450")
+![](Figs/thresh.gif)
+
+
+![](Figs/dilate.gif)
 
 Step 05:
 
 Next step is finding Contours and Contours area. Contours can be explained simply as a curve joining all the continuous points (along the boundary), having same color or intensity. Contours are an outline representing or bounding the shape or form of something.
 Contour Area -> Area Enclosed inside a closed contour in pixels
 
+![](Figs/mot_det.gif)
 
+![](Figs/output.gif)
 
