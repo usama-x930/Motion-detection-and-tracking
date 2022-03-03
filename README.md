@@ -7,4 +7,8 @@ Motion detection is the process of detecting a change in the position of an obje
   
 </p>
 
+### Step 1:
+Background image is a baseline image. This image is used as a reference for detecting object. Frame difference is calculated between the reference image and the image having an object.
+
+  <img src="Figs/st1.jpg" title="hover text">
 
