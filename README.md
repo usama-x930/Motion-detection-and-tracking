@@ -11,4 +11,9 @@ Motion detection is the process of detecting a change in the position of an obje
 Background image is a baseline image. This image is used as a reference for detecting object. Frame difference is calculated between the reference image and the image having an object.
 
   <img src="Figs/st1.jpg" title="hover text">
-
+### Step 2:
+The next step is conversion to grayscale and gaussian smoothing. It removes the noise from the image since noise can affect the edge detection results. The gaussian kernel is calculated using the formula: 
+<img src="Figs/gauss.jpg" title="hover text">
+Gaussian filter is convolved with the image to remove the noise and smoothened the image.
+<img src="Figs/conv.jpg" title="hover text">
+### Step 3:
