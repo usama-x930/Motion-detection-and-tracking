@@ -16,15 +16,18 @@ Background image is a baseline image. This image is used as a reference for dete
 
 The next step is conversion to grayscale and gaussian smoothing. It removes the noise from the image since noise can affect the edge detection results. The gaussian kernel is calculated using the formula: 
 
-<img src="Figs/gauss.jpg" width="200" title="hover text">
-
+<p align="center">
+<img src="Figs/gauss.jpg" width="150" title="hover text">
+</p>
 
 
 Gaussian filter is convolved with the image to remove the noise and smoothened the image.
 
-<img src="Figs/conv.jpg" width="300" title="hover text">
+<p align="center">
+<img src="Figs/conv.jpg" width="400" title="hover text">
+</p>
 
-![](blur.gif)
+![](Figs/blur.gif)
 
 ### Step 3:
 
