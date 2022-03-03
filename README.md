@@ -39,6 +39,8 @@ In OpenCV:
 Cv2.absdiff(reference, original)
 ```
 
+![](Figs/diff.gif)
+
 ### Step 04:
 
 Next step is thresholding and dilation. In digital image processing, thresholding is the simplest method of segmenting images. From a grayscale image, thresholding can be used to create binary images. Dilation adds pixels to the boundaries of objects in an image.
@@ -47,7 +49,8 @@ In OpenCV:
 ```
 Cv2.threshold(image, thresh_val, max_val, method)
 ```
-
+![]("Figs/thresh.gif" width="450")
+![]("Figs/dilate.gif" width="450")
 
 Step 05:
 
