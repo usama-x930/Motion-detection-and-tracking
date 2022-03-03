@@ -10,7 +10,7 @@ Motion detection is the process of detecting a change in the position of an obje
 ### Step 1:
 Background image is a baseline image. This image is used as a reference for detecting object. Frame difference is calculated between the reference image and the image having an object.
 
-  <img src="Figs/st1.jpg" width="100" title="hover text">
+  <img src="Figs/st1.jpg" title="hover text">
   
 ### Step 2:
 
@@ -18,7 +18,35 @@ The next step is conversion to grayscale and gaussian smoothing. It removes the 
 <img src="Figs/gauss.jpg" width="100" title="hover text">
 
 Gaussian filter is convolved with the image to remove the noise and smoothened the image.
-<img src="Figs/conv.jpg" title="hover text">
+<img src="Figs/conv.jpg" width="200" title="hover text">
 
 ### Step 3:
-[![Watch the video]("dilate.avi")]("dilate.avi")
+
+Frame difference detects moving objects by examining the difference of two adjacent frames.
+Pixel Wise intensity difference.
+In OpenCV:
+
+``` #2x
+
+Cv2.absdiff(reference, original)
+
+```
+
+### Step 04:
+
+Next step is thresholding and dilation. In digital image processing, thresholding is the simplest method of segmenting images. From a grayscale image, thresholding can be used to create binary images. Dilation adds pixels to the boundaries of objects in an image.
+In OpenCV:
+
+```
+Cv2.threshold(image, thresh_val, max_val, method)
+
+```
+
+
+Step 05:
+
+Next step is finding Contours and Contours area. Contours can be explained simply as a curve joining all the continuous points (along the boundary), having same color or intensity. Contours are an outline representing or bounding the shape or form of something.
+Contour Area -> Area Enclosed inside a closed contour in pixels
+
+
+
