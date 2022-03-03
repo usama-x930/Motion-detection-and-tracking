@@ -15,10 +15,16 @@ Background image is a baseline image. This image is used as a reference for dete
 ### Step 2:
 
 The next step is conversion to grayscale and gaussian smoothing. It removes the noise from the image since noise can affect the edge detection results. The gaussian kernel is calculated using the formula: 
-<img src="Figs/gauss.jpg" width="100" title="hover text">
+
+<img src="Figs/gauss.jpg" width="200" title="hover text">
+
+
 
 Gaussian filter is convolved with the image to remove the noise and smoothened the image.
-<img src="Figs/conv.jpg" width="200" title="hover text">
+
+<img src="Figs/conv.jpg" width="300" title="hover text">
+
+![](blur.gif)
 
 ### Step 3:
 
@@ -27,9 +33,7 @@ Pixel Wise intensity difference.
 In OpenCV:
 
 ``` #2x
-
 Cv2.absdiff(reference, original)
-
 ```
 
 ### Step 04:
@@ -39,7 +43,6 @@ In OpenCV:
 
 ```
 Cv2.threshold(image, thresh_val, max_val, method)
-
 ```
 
 
